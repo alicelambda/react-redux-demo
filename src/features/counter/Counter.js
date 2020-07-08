@@ -54,6 +54,13 @@ export function Counter() {
         >
           Add Async
         </button>
+        <button
+          onClick={()=>dispatch(incrementByAmount(3))}
+        
+        >
+          test
+
+        </button>
       </div>
     </div>
   );
