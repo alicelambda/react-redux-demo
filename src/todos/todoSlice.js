@@ -10,6 +10,6 @@ export const todoSlice = createSlice({
 
 export const { addTodo } = todoSlice.actions;
 
-export const selectCount = state => state
+export const selectTodos = state => state.todos
 
 export const todoReducer =  todoSlice.reducer;

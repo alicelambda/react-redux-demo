@@ -8,12 +8,20 @@ import {
   selectCount,
 } from './counterSlice';
 import styles from './Counter.module.css';
+import {
+  addTodo,
+  selectTodos
+} from '../../todos/todoSlice';
 
 export function Counter() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
 
+  
+  const todos = useSelector(selectTodos);
+
+  console.log(todos);
   return (
     <div>
       <div className={styles.row}>
