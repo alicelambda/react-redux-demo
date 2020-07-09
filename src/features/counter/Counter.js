@@ -58,7 +58,7 @@ export function Counter() {
           onClick={()=>dispatch(incrementByAmount(3))}
         
         >
-          test
+          Add 3
 
         </button>
       </div>

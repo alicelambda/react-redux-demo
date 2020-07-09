@@ -22,6 +22,8 @@ export const counterSlice = createSlice({
   },
 });
 
+
+
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
 // The function below is called a thunk and allows us to perform async logic. It
@@ -39,4 +41,4 @@ export const incrementAsync = amount => dispatch => {
 // in the slice file. For example: `useSelector((state) => state.counter.value)`
 export const selectCount = state => state.counter.value;
 
-export default counterSlice.reducer;
+export const  counterReducer =  counterSlice.reducer;
