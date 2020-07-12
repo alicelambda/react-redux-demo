@@ -63,11 +63,12 @@ export function Counter() {
           Add Async
         </button>
         <button
-          onClick={()=>dispatch(incrementByAmount(3))}
+          onClick={()=> {
+            dispatch(addTodo())
+          }}
         
         >
-          Add 3
-
+          Add 4E
         </button>
       </div>
     </div>

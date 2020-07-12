@@ -4,7 +4,14 @@ export const todoSlice = createSlice({
     name: 'todos',
     initialState: [],
     reducers: {
-      addTodo: state => ["TEST"]
+      addTodo: state => {
+        return [
+          ...state,
+          {
+            id:"HELLo"
+          }
+        ]
+      },
     }
   });
 
